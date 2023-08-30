@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 三元运算符 ： 条件？满足条件代码：不满足条件代码
+      // 3>5吗？如果为真 执行输出3 如果为假 执行输出为5
+      console.log(3 > 5 ? 3 : 5); // 5
+
+      // 一般用来取值用
+      let num = 3 < 5 ? 3 : 5;
+      console.log(num);
+
+      // 三元运算符 练习
+      // 判断2个数的最大值
+      // 需求 用户输入2个数 ，控制台输出最大值
+
+      // 首先去用户输入
+      let num1 = +prompt("请您输入第一个数值"); //注意数值转换
+      let num2 = +prompt("请您输入第二个数值"); //注意数值转换
+
+      //用一个最大值的变量来接收比较之后的数值
+      let max = num1 > num2 ? num1 : num2;
+
+      //用模版来输出
+      alert(`两个数值中的最大值为${max}`);
+    </script>
+  </body>
+</html>

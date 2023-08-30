@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    h2 {
+      text-align: center;
+    }
+
+    table {
+      /* 合并相邻边框 */
+      border-collapse: collapse;
+      height: 80px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    th {
+      padding: 5px 30px;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px, solid, #000;
+    }
+  </style>
+
+  <body>
+    <h2>订单确认</h2>
+
+    <!-- <script>
+      let price = prompt("please input goods of price! ");
+      let numbers = prompt("please input goods of numbers! ");
+      let address = prompt("please input address! ");
+
+      alert;
+    </script> -->
+
+    <script>
+      // 1.首先进行输入操作 初始化 声明3个变量
+      // 注意：用prompt进行输入操作的都会转换成 string字符型 特别需要注意类型转换
+      // 不了解的情况下 可以把鼠标移动到let 后面的变量名之后 ，会显示出具体的数据类型
+      let price = +prompt("请您输入产品的价格"); //字符型需要转换到数字型 需要‘+’转换
+      let num = +prompt("请您输入产品的数量");
+      let address = prompt("请您输入收货地址"); //这个不需要转换
+      // 2.计算总价
+      let total = price * num;
+
+      // 3.页面打印 渲染打印页面表格
+      // 运用模版字符串进行填充操作
+      // 运动反引号
+      // 剪切table
+      document.write(`
+      <table class="box">
+      <tr>
+        <th>商品名称</th>
+        <th>商品价格</th>
+        <th>商品数量</th>
+        <th>总价</th>
+        <th>收货地址</th> 
+      </tr>
+      <tr>
+        <td>小米青春PLUS</td>
+        <td>${price}</td>
+        <td>${num}</td>
+        <td>${total}元</td>
+        <td>${address}</td>
+      </tr>
+    </table>  
+      `);
+    </script>
+  </body>
+</html>

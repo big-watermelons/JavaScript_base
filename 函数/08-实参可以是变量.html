@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 求n -m的累加和
+
+      function getSum(n = 0, m = 0) {
+        // 在循环体外面定义一个求和变量
+        let sum = 0;
+        for (let i = n; i <= m; i++) {
+          sum += i; //这个地方一定注意 如果怕出问题可以换一种方法 sum= sum+i
+        }
+        console.log(sum);
+      }
+      // 调用函数方法
+      getSum(); //0
+      getSum(1, 2); //3
+
+      // 一定要注意类型转问题 不然调用方法会是字符串拼接
+      let num1 = +prompt("请输入起始数：");
+      let num2 = +prompt("请输入结束数：");
+      getSum(num1, num2);
+      // getSum(prompt("请输入起始数："), prompt("请输入结束数："));
+    </script>
+  </body>
+</html>

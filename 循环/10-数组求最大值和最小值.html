@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //声明一个数组 初始化
+      let arr = [2, 6, 1, 77, 52, 25, 7];
+      // 声明一个最大值变量 并且必须赋值 不然会报错
+      let max = arr[0];
+
+      // 循环遍历数组
+      // 一定要去理解max<arr[i]还是max>arr[i] 这关系到后面的赋值和输出 逻辑要搞清楚 不然不会渲染输出到画面
+      for (let i = 0; i < arr.length; i++) {
+        // 做条件判断 前一位比较后一位
+        if (max < arr[i]) {
+          let max = arr[i];
+        }
+      }
+      document.write(`数组中的最大值为${max}<br>`);
+
+      // 声明一个最大值变量 并且必须赋值 不然会报错
+      //  if (min > arr[i]) 这句话要好好理解
+      let min = arr[0];
+      for (let i = 0; i < arr.length; i++) {
+        if (min > arr[i]) {
+          min = arr[i];
+        }
+      }
+      document.write(`数组中的最大值为${min}`);
+    </script>
+  </body>
+</html>

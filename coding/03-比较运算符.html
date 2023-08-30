@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      console.log(3 > 5); //false
+      console.log(3 >= 3); //true
+      console.log(2 == 2); //true
+      // 双等号‘==’ 只做判断值你不管数据类型
+      console.log(2 == "2"); //true 比较运算符也有隐式转换  会把字符型的2 转换为数字型的2
+      //三等号‘===’ 全等 判断值和数据类型都一样才行 严格判断 所以是false
+      // 以后判断是否相等 请用‘===
+      console.log(2 === "2"); //false
+
+      console.log(undefined == null); //true
+      console.log(undefined === null); //false
+      console.log(NaN === NaN); //NaN不等于任何人，包括他自己
+    </script>
+  </body>
+</html>

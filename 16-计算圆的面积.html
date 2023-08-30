@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //1.首先定义一个常量 也就是圆的PI
+      const PI = 3.14;
+
+      //2.在对话框中输入圆的r的半径是多少
+      //然后用变量r来接收数据
+      let r = prompt("请输入圆的半径r为多少"); //这个步骤写在第二步也可以，因为prompt('')函数方法会在页面渲染之前执行
+
+      //3.圆的面积公式 PI * r2
+      //打印输出结果
+      document.write(PI * (r * r));
+
+      //NaN = Not a Number
+      //NaN代表一个计算错误。它是一个不正确的或者一个未定义的数学操作所得到的结果
+      //例子
+      console.log("BROOKS" - 2); //NaN = Not a Number
+
+      //NaN 是粘性的，任何对NaN的操作都会返回NaN
+      console.log(NaN + 1); //NaN
+    </script>
+  </body>
+</html>

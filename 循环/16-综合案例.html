@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 需求； 用户输入四个季度的数据，可以生成柱状图
+
+      // 声明一个数组
+      let seasonDate = [];
+
+      // 1.循环遍历数组
+      // 4次弹窗效果
+      for (let i = 1; i <= 4; i++) {
+        // 把用户输入的数据存入到一个数组中去
+        // let date = +prompt(`请输入第${i}季度的数据`); //数字型转换
+        // // 把输入进来的数据 放入到数组中去
+        // seasonDate.push(date);
+
+        // 直接一步到位 代入法 简化代码
+        seasonDate.push(+prompt(`请输入第${i}季度的数据`));
+      }
+      console.log(seasonDate);
+    </script>
+  </body>
+</html>

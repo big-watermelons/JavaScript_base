@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // //规则
+      // + 号两边只要有一个字符串，都会把另一个转换成字符串
+      //笔记： ‘+’号偷偷提前做了一步操作，就是在相加之前 先观察两侧是否有字符串，有的话 就把后面的数据转换成字符串形式
+      console.log(1 + 1); //2
+      console.log("hejunjie" + 1); //hejunjie1
+      console.log(2 + 2); //4
+      console.log(2 + "2"); //22
+
+      // 除了+以外的算术运算符，比如 - * / 都会把数据转成数字类型
+
+      console.log(2 - 2); // 0
+      console.log(2 - "2"); //0
+
+      console.log(+12); //12
+
+      /**
+       * 关于+号小技巧
+       * + 号座位正号解析可以转换成数字型 重点**
+       *任何数据和字符串相加结果都是字符串
+       * **/
+      //转换为数字型 隐式转换
+      console.log(+"123"); // 数字型123
+    </script>
+  </body>
+</html>

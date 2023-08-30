@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 案例
+      // 需求：用户输入1个数，如果小于10，则前面进行补0，比如09 03 等等
+
+      //用户输入操作
+      let num = prompt("请您输入一个数："); //字符串 后续进行拼接操作 字符串+数字型 等于 字符串类型
+      let adjustNum = num < 10 ? 0 + num : num;
+      alert(`输出的值为${adjustNum}`);
+    </script>
+  </body>
+</html>

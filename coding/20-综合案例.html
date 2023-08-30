@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //3. 准备预先存款额 一定要写在循环的外面 不然每次循环都会重置金额数字
+      let money = 1000;
+      // 1.开始无限循环
+      while (true) {
+        // 模版字符串是支持竖版格式
+        // 接下来要进行比较 注意数字型和字符串型比较 转换格式
+        let choice = +prompt(`
+          请您选择操作：
+          1.存钱
+          2.取钱
+          3.查看余额
+          4.退出
+        `);
+        //2.如果用户输入的为 4 则退出循环
+        if (choice === 4) {
+          break;
+          //  用switch 语句来进行操作
+        }
+        // 每个条件之后 一定要注意括号的位置 不要遗漏
+        switch (choice) {
+          case 1:
+            // 存钱; 记得数据类型转换
+            let save = +prompt("请输入存款金额");
+            money = money + save;
+            break;
+          case 2:
+            // 取钱; 记得数据类型转换
+            let withdraw = +prompt("请输入您需要的取款金额");
+            // 条件判断
+            if (withdraw > money) {
+              alert("您的余额不足，请重新输入");
+              // 不执行取款操作
+              // money -= withdraw;
+            } else if (withdraw <= money) {
+              // 执行取款操作
+              money -= withdraw;
+            }
+            break;
+          case 3:
+            // 查看余额;
+            alert(`您的银行卡余额是${money}`);
+            break;
+          case 4:
+            退出;
+            break;
+          default:
+            break;
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 函数传参
+      // 声明语法
+      // function 函数名(参数列表){
+      //   函数体
+      // }
+      // function getSquare(num1){
+      //   docunment.write(num1*num1)
+      // }
+      // function getSum(num1,num2){
+      //   docunment.write(num1+num1)
+      // }
+
+      // 封装求和
+
+      // 封装一个求和函数
+
+      // function getSum(num1, num2) {
+      //   document.write(num1 + num2);
+      // }
+      // 为了让程序更加严谨
+      // 函数传参，参数默认值
+      // // 如果用户不输入实参，可以给形参默认值，可以默认为0，这样程序更加严谨
+      function getSum(x = 0, y = 0) {
+        document.write(x + y);
+      }
+      //调用函数
+      getSum(1, 2); //3
+      document.write("<br>");
+
+      // 如果用户不输入实参，可以给形参默认值，可以默认为0，这样程序更加严谨
+      getSum(); //0 //声明一个变量 但没有赋值 所以会是undefined类型  undefined+undefined=NaN
+    </script>
+  </body>
+</html>

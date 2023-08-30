@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 单分支语句
+      // if (true) {
+      //   console.log("执行语句");
+      // }
+      // if (false) {
+      //   console.log("执行语句");
+      // }
+      // if (2 < 5) {
+      //   console.log("执行语句");
+      // }
+      // if (2 === "2") {
+      //   console.log("执行语句");
+      // }
+      // 除了0 所有数字都为真
+      // if (0) {
+      //   console.log("执行语句");
+      // }
+      // 除了空字符串’‘时候，所有字符串都为真
+      // if ("tokyo") {
+      //   console.log("执行语句");
+      // }
+
+      // 练习
+      // 首先输入成绩 ，用变量进行接收 初始化
+      let scores = prompt("请您输入成绩");
+      // 条件判断 注意 边界数据 很容易出bug
+      if (scores >= 700) {
+        console.log("恭喜您，已经被录取");
+      } else {
+        console.log("很遗憾，未被录取，继续加油");
+      }
+    </script>
+  </body>
+</html>

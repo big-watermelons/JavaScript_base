@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // continue 退出循环 好好理解
+      // for循环
+      // 循环5次
+      for (let i = 1; i <= 5; i++) {
+        if (i === 3) {
+          continue; //循环体遇上了continue 关于本次循环的中的所有的语句都不执行
+        }
+        console.log(i);
+        document.write(i);
+      }
+      document.write("<br>");
+
+      //break 退出循环
+      for (let p = 1; p <= 5; p++) {
+        if (p === 3) {
+          break; //包括3 以及3以后得所有循环都不执行输出语句 退出整个循环
+        }
+        console.log(p);
+        document.write(p);
+      }
+
+      // 了解
+      // 1.while（true）来构造 无限循环，需要使用break退出循环
+      // 2. for（；；）也可以来构造 无限循环，同样需要使用break退出循环
+    </script>
+  </body>
+</html>

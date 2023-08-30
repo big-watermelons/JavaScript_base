@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 需求 学生的分数是一个数组，计算每个学生的总分
+      // 声明一个数组 成绩
+      // let arr = [90, 80, 78, 57, 98];
+
+      // 注意传入的形参 具体要传入什么样的参数 要考虑
+      // 它是一个数组形式 数组是按照有序排列 所以包含整个元素 传参的话直接写数组名就ok
+      // 形参为arr
+      // 为了防止传入一个空数组，保持代码的健壮性arr = []
+      function getSum(arr = []) {
+        let sum = 0;
+        // 遍历数组
+        for (let i = 0; i < arr.length; i++) {
+          sum += arr[i];
+        }
+        console.log(sum);
+      }
+
+      // 调用函数 （）里面放入具体的实参
+      getSum([90, 80, 78, 57, 98]);
+      // 用户不传入 一个空数组容易报错
+      getSum(); // 报错信息 Uncaught TypeError: Cannot read properties of undefined (reading 'length')
+    </script>
+  </body>
+</html>

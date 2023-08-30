@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 需求：让用户输入年份，判断这一年是闰年还是平年并且弹出对应的警示框
+
+      //需要提前了解判断闰年的方法
+      // 用户输入 并且初始化变量
+      let years = +prompt("请您输入年份："); //后续需要加减乘除 所以需要转换为数字型
+
+      //能被4整除 并且 不能被100整除 || 可以被400整除
+      if (years % 400 === 0 || (years % 4 === 0 && years % 100 !== 0)) {
+        // alert("这是闰年");
+        // 这里我们可以用反引号 模版来写
+        alert(`${years}是闰年`);
+      } else {
+        alert(`${years}是平年`);
+      }
+    </script>
+  </body>
+</html>

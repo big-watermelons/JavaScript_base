@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 返回值的概念
+      // 当函数需要返回值时候，用return关键字
+
+      // 例子 容易误区搞错
+
+      /*
+      注意细节 
+      1. return 后面的数据不要换行写
+      2. 函数体中 可以没有return 这种情况下 函数默认返回值为 undefined
+       */
+      function fn() {
+        return 20; //实际上 返回值20 返回给了fn()这个函数，而不是fn  这一点要搞清楚来
+      }
+
+      //调用函数
+      let re = fn(); //可以把他声明一个变量 20
+      console.log(re); //后台打印 验证20
+      // 这一步操作相当于 执行了 fn()调用者 fn()=20 调用者就是fn()
+      console.log(fn()); //20
+
+      // 求价格总和函数的写法
+      // 方法体上的是形参
+      function getTotalPrice(price1 = 0, price2 = 0) {
+        return price1 + price2; //有返回值 return + 返回值
+      }
+
+      // 调用函数 调用函数（）内的是实参 ，直接写数字就可以了
+      // console.log(getTotalPrice(50, 100)); //150
+      // console.log(getTotalPrice()); //0 因为在方法体中设置了 0 ， 0 变量 加强函数的健壮性 不然会打印NaN
+      // 上面打印方法比较麻烦 代码比较长 用一个变量来接收
+      let sum = getTotalPrice(100, 100);
+      // 如果页面中有需要 直接拿sum
+      console.log(sum); //200
+    </script>
+  </body>
+</html>

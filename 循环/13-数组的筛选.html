@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 需求
+      // 将数组 [2,0,6,1,77,0,52,0,25,7]中大于等于10的元素选出来，放入新数组
+
+      // 原始数据
+      let arr = [2, 0, 6, 1, 77, 0, 52, 0, 25, 7];
+      // 申明一个新数组 并且给一个空数组
+      let newArr = [];
+      //循环遍历数组
+      for (let i = 0; i < arr.length; i++) {
+        if (arr[i] >= 10) {
+          // 满足条件追加给新数组
+          newArr.push(arr[i]);
+          // newArr = arr[i];
+        }
+      }
+      console.log(newArr);
+    </script>
+  </body>
+</html>

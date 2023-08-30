@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // let arr = [];
+      // console.log(arr);
+      // // console.log(arr[0]); //未定义 undefined
+      // arr[0] = 1;
+      // arr[1] = 5;
+
+      let arr = ["pink", "black", "white", "grey"];
+      // arr[0] = "hejunjie"; //直接把arr[0]赋值的话，会直接覆盖之前的arr[0]下标的数据 修改操作
+      // console.log(arr);
+      // 给上面4个数据都加上‘老师’
+      for (let i = 0; i < arr.length; i++) {
+        // 执行语句
+        arr[i] = arr[i] + "老师";
+      }
+      console.log(arr);
+    </script>
+  </body>
+</html>

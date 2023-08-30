@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 需求：输入成绩案例
+      // 需求：根据输入不同的成绩，反馈不同的评价
+
+      // 1.首先用户输入
+      let scores = +prompt("请您输入您的成绩："); //需要注意数据类型转换
+
+      // 进行判断
+      if (scores >= 90) {
+        alert("您的成绩为优秀"); 
+      }
+      // 还有一种判断方法 思路逻辑要展开
+      // else if (scores >= 70) 不需要再判断90分的阶段 以下依次类推
+      else if (scores >= 70 && scores < 90) {
+        alert("您的成绩为良好");
+      } else if (scores >= 60 && scores < 70) {
+        alert("您的成绩为及格");
+      } else if (scores < 60) {
+        alert("您的成绩为不及格");
+      }
+    </script>
+  </body>
+</html>

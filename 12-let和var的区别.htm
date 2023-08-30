@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- /** 总结： var声明 1.可以先试用 再声明（不合理）
+    2.var在声明过的变量可以重复声明(不合理)
+    3.比如变量提升，全局变量，没有块级作用域等等 **/ -->
+
+    <script>
+      //1.可以先试用 再声明（不合理）
+      // var num;
+      // console.log(num);
+      // var nume = 10;
+
+      //2.var在声明过的变量可以重复声明(不合理)
+      var num = 10;
+      var num = 20; //以最后一个为准
+      console.log(num);
+
+      
+    </script>
+  </body>
+</html>

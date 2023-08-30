@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 需求 1.封装一个函数，计算两个数的和
+
+      function getSum() {
+        let num1 = +prompt("请输入第一个数：");
+        let num2 = +prompt("请输入第一个数：");
+        sum = num1 + num2;
+        document.write(sum);
+      }
+      getSum();
+
+      // 换行专用 不换行的话 容易前后数据拼接 引起歧义
+
+      document.write("<br>");
+
+      // 封装一个函数，计算1-100之间所有数的和
+      let oosum = 0;
+      function oppSum() {
+        for (let i = 1; i <= 100; i++) {
+          if (i % 2 === 0) {
+            oosum += i;
+          }
+        }
+        document.write(oosum);
+      }
+      oppSum(); //5050
+    </script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //1.首先先声明一个变量 直接赋值 初始化 提倡声明方式 
+    // let age = 18
+    // //错误范例  let不允许多次声明变量
+    // // let age = 19  报错信息：Uncaught SyntaxError: Identifier 'age' has already been declared
+    // age = 19
+    // console.log(age);
+
+
+    //2.声明多个变量 不推荐，不提倡，可读性不好
+    // let age = 18, name = 'BROOKS'
+    // //控制台打印输出 确认用
+    // console.log(age,name);
+
+    //案例
+    //分析 ： 1.prompt('')弹框提示 2. 用一个let+变量名 来接收 并且赋值初始化
+    // let name = prompt('请输入你的姓名') //右边赋值给左边的思路 要记住
+    
+    // //3.控制台打印输出 确认信息
+    // // console.log(name);
+
+    // //3. 或者打印输出到页面 
+    // document.write(name)
+
+
+    //案例 2 首先声明两个变量 并且赋值 初始化
+    let num1 = 10
+    let num2 = 20
+    
+    //变量更新数据
+    //核心思路 使用一个 临时变量 用来做中间存储
+    tempnum = num1
+    num1 = num2
+    num2 = tempnum
+
+    //最后输出打印看结果 
+    document.write("num1为:" + num1 , "num2为:" + num2)
+
+
+
+
+
+  </script>
+</body>
+</html>

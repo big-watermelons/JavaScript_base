@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // let i = 1;
+      // 1.利用for循环输出1- 100 岁
+      for (let i = 1; i <= 100; i++) {
+        // <br>标签标识换行排列，可以用在反引号``中间
+        document.write(`这是第${i}个数<br>`);
+      }
+
+      document.write("-------------------<br>");
+
+      // 求1- 100 之间所有的偶数和
+      // 1. 初始化 明确变量值 写在循环体的外面
+      let sum = 0;
+      // 2.先循环 1 -100
+      for (let o = 1; o <= 100; o++) {
+        // 循环条件进行判断 偶数判断
+        if (o % 2 === 0) {
+          sum = sum + o;
+        }
+      }
+      // 最终输出的数字 应该写在循环体的外面
+      document.write(`1- 100 之间所有的偶数和为${sum}<br>`);
+
+      document.write("-------------------<br>");
+      // 页面打印5颗小星星
+      for (let p = 1; p <= 5; p++) {
+        document.write("⭐️<br>");
+      }
+
+      document.write("-------------------<br>");
+
+      // 打印数组
+      let arr = ["xiao", "ming", "liu", "lin", "he"];
+      // document.write(arr[0]); //数组的索引是从0 开始
+      // 单独索引 比较麻烦 直接用for循环打印数组 注意的是 数字索引从0 开始 所以for循环也要从0开始
+
+      // 重点 数组的下标索引号 和 数组的长度关系 arr[i]= arr.length -1;
+      // 还有一种写法就是
+      // for (let i = 0;i<arr.length;i++){} 其中终止条件有些许的变化
+      for (let i = 0; i <= arr.length - 1; i++) {
+        // 打印全部
+        // 必须从0开始，因为数组的索引是从0开始
+        // 如果在循环体中为最后一个索引的后面不加上逗号，
+        if (arr[i] === arr.length - 1) {
+          document.write(arr[i]);
+        } else {
+          // // 如果在循环体中为每个索引加上逗号，
+          document.write(arr[i] + ",");
+        }
+      }
+    </script>
+  </body>
+</html>

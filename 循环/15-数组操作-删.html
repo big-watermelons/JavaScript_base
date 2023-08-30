@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 1.目标 能够删除数组元素（数据）
+      //数组名.pop()方法从数组中删除最后一个元素，并返回该元素的值
+      // 语法 arr.pop() 删除最后一个元素
+      // 例子
+      // let arr = ["hejunjie", "xiaojie", "dabai"];
+      // arr.pop(); //直接调用方法 （）里面不需要放入任何元素值
+      // console.log(arr); //返回数组长度 并且 元素 "hejunjie", "xiaojie"
+
+      // 2.shift（）删除第一个元素
+      // let arr = ["hejunjie", "xiaojie", "dabai"];
+      // let arr = ["hejunjie", "xiaojie", "dabai"];
+      // arr.shift(); //"hejunjie"
+      // console.log(arr.shift()); //"hejunjie"
+      // console.log(arr); //剩余 "xiaojie"元素
+
+      //3.数组名.splice()方法 删除指定元素
+      // 语法： arr.splice(start,deleteCount)
+      // arr.splice(起始位置，删除几个元素) start 指定修改的开始为值 从0开始计算
+      // deleteCount 表示要移除的数组元素的个数 ，如果省略则默认从指定位置删除到最后
+      let arr = ["hejunjie", "xiaojie", "dabai"];
+      arr.splice(1, 1);
+      // arr.splice(1) 这段代码的意思是 从arr[1]元素开始 删除到最后
+      console.log(arr);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 打印5行5列的星星;
+      // 大循环外面是行;
+      for (let i = 1; i <= 5; i++) {
+        // 给一个行数的限制条件 需要换行显示
+        if (i <= 5) {
+          document.write("<br>");
+        }
+        // 小循环是列
+        for (let j = 1; j <= 5; j++) {
+          document.write("⭐️");
+        }
+      }
+
+      document.write("<br>");
+
+      // 升级版本
+      // 用户输入行数和列数 ，打印对应的星星
+      // 一定要数据类型转换 隐式转换
+      let row = +prompt("请输入您需要的行数");
+      let column = +prompt("请输入您需要的列数");
+
+      for (let i = 1; i <= row; i++) {
+        for (let j = 1; j < column; j++) {
+          document.write("⭐️");
+        }
+        // 换行显示
+        document.write("<br>");
+      }
+    </script>
+  </body>
+</html>

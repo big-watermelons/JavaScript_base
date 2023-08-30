@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 求和 求数组[2,6,1,7,4]里面所有元素的和以及平均值
+
+      //  声明数组
+      let arr = [2, 6, 1, 7, 4];
+      // 声明一个总和变量
+      // 注意点 let sum ；不赋值的情况下 会是 underfined类型 如果接下来进行数据相加 会是NaN
+      let sum = 0;
+      // 遍历数组
+      for (let i = 0; i < arr.length; i++) {
+        // 每次遍历都相加自己得到一个和
+        sum += arr[i];
+      }
+      //和
+      document.write(`所有元素的和为${sum}<br>`);
+      //平均数
+      let avg = sum / arr.length;
+      document.write(`所有元素的平均值为${avg}`);
+    </script>
+  </body>
+</html>

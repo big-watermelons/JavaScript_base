@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //1.Number（数据）
+      // let str = "123";
+      // console.log(Number(str)); // number类型 蓝色
+
+      // // let salary = prompt("请输入你的工资");
+      // //换一种写法
+      // let salary = Number(prompt("please input your salary !"));
+      // console.log(Number(salary)); //number 类型 强制转换 蓝色
+
+      //2.注意 NaN也是数据类型的数据 ，代表非数字
+
+      //3.parseInt（数据） 只保留整数
+      console.log(parseInt("12px")); //12px为字符串数据类型 所以转换为整数 12
+      console.log(parseInt("13.23px")); //13
+      console.log(parseInt("12.95px")); //12 不进行四舍五入
+
+      //-----------------------------
+      //4.patseFloat(数据) 可以保留小数
+      console.log(parseFloat("12.98px")); //12.98
+      console.log(parseFloat("12px")); //12
+      console.log(parseFloat("13.987px")); //13.987
+    </script>
+  </body>
+</html>

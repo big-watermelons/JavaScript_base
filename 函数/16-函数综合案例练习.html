@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 转换时间案例
+      // 需求 用户输入描述，可以自动转换为时分秒
+      // 10000秒转换为2小时46分钟40秒
+
+      let seconds = +prompt("请输入您需要的秒数："); //注意数据类型转化
+
+      // 封装一个函数 形参
+      function getTime(t) {
+        // console.log(t);
+        // 3.转换
+        h = parseInt((t / 60 / 60) % 24);
+        m = parseInt((t / 60) % 24);
+        s = parseInt(t % 60);
+
+        // return返回值 模版来写
+      }
+      // 调用函数 实参 动态 也就是手动输入进来的变量
+      getTime(seconds);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // A.两个相同的函数后面的会覆盖前面的函数
+      // 例子 函数冲突 也就是函数名雷同，就近元素 后面的覆盖前面的代码 最终输出的结果为2
+      function fn() {}
+      function fn() {
+        console.log(2);
+      }
+      // 2.调用函数
+      fn(); //2
+
+      // B.在js中，实参的个数和形参的个数可以不一致 （尽量不要这样做） 别的语言可能会报错 但是js是一种弱语言
+      // 例子
+      function fn(a, b) {
+        console.log(a + b);
+      }
+      // 调用函数
+      // 1.实参多与形式情况下， 剩余的实参 不参与运算
+      fn(1, 1, 2); //2为最终输出结果
+
+      // 2.实参少于形参情况下，
+      fn(1); //1+ undefined=NaN
+    </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //1.函数表达式，匿名函数
+      let fn = function () {};
+      console.log(fn); //fn(){}
+
+      // 例子
+      let fun = function () {
+        console.log("我是函数表达式");
+      };
+
+      //调用函数 问题：匿名函数如何调用 这是个问题
+      fun(); //和普通的函数调用方法是一样的
+
+      //实参 形参
+      let f = function (x, y) {
+        // 函数表达式
+        console.log(x + y); //7
+      };
+      f(3, 4);
+
+      // 2. 匿名函数表达式和具名函数 不同
+      // 例子 具名函数 调用位置可以是任意位置 前后都可以
+      function fun() {
+        console.log(1);
+      }
+
+      // 匿名函数 ，必须先写表达式，后调用。不能在函数体的前面调用 会报错 before
+      // 原理类似于 let 先声明后使用
+    </script>
+  </body>
+</html>

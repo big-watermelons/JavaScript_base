@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 函数为局部作用域 强烈不推荐
+      function fn() {
+        num = 10; //没有声明 当做局部变量来看
+      }
+      // 调用函数方法
+      fn();
+      console.log(num); //10
+
+      // // 另一种情况对比
+      // let num1 = 20; //函数外部
+      // function fn() {
+      //   let num1 = 10; // 函数体内当做局部变量来看 声明周期let num1 = 10 只能在{}里面 出了这个范围拿不到值
+      // }
+      // // 调用函数方法
+      // fn();
+      // console.log(num1); //最终输出的20
+
+      function fun(x, y) {
+        // 形参可以看做是函数的局部变量
+        console.log(x); //1
+      }
+      fun(1, 2);
+      console.log(x); //报错 不允许打印函数内部局部变量 Uncaught ReferenceError: x is not defined
+    </script>
+  </body>
+</html>

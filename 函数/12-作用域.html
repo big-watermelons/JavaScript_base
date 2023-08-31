@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let num = 10; //1.全局变量
+      console.log(num);
+      function fn() {
+        console.log(num);
+      }
+      // 调用函数
+      fn();
+
+      // 2.局部变量
+      function fun() {
+        let str = "pink";
+        console.log(str); //pink
+      }
+      // 记得调用函数
+      fun(); //'pink'
+
+      // 报错信息：12-作用域.html:23 Uncaught ReferenceError: str is not defined
+      // 在函数体内{} 能够拿到str变量 出了函数体就不能取 会报错
+      console.log(str);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 使用场景 let 不允许函数名字重名
+      // let num = 10;
+      // let num = 20;
+
+      // 解决方案  记住方法  把一个匿名的结构 function(){} 括起来 (function(){}),后续再加一个()
+      // 第二个() 本质是在调用函数  ()里面的内容是实参
+      // 所以结构就是 (function(){})() 名字叫做立即执行函数
+      (function () {})();
+
+      // 所谓的立即执行函数是因为 不用调用 直接输出 数据
+      (function () {
+        console.log(10);
+      })(); //10 输出10 并且不用像匿名函数 或者 具名函数一样 fn() 调用
+
+      // 例子 立即执行函数必须加分好； 不然会报错
+      (function () {
+        console.log((num = 10));
+      })();
+      (function () {
+        console.log((num = 20));
+      })();
+
+      // // 第二个() 本质是在调用函数  ()里面的内容是实参
+      // 所以结构就是 (function(){})() 名字叫做立即执行函数
+      // 例子
+      (function (x, y) {
+        console.log(x * y);
+      })(1, 2); //2
+    </script>
+  </body>
+</html>
